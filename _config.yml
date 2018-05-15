@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Anthony Wang's GSoC blog
-email: anthony81212+gsoc_blog@gmail.com
+email: anthony81212+gsoc@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Musings (and of course, progress updates) of a GSoC 2018 student.
-  Follow along to see the latest developments!
+  Musings (and of course, progress updates 😁) of a GSoC 2018 student.
+  Follow along to see the latest developments! 💻
 baseurl: "/gsoc_blog" # the subpath of your site, e.g. /blog
 url: "https://anthony-wang.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aytwang

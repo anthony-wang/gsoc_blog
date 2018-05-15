@@ -11,7 +11,9 @@ This is my first blog post. I'm excited to announce that I have been selected by
 
 I will be working with the [Julia](https://github.com/JuliaLang) team, more specifically on extending the documentation and documentation capabilities of [`Makie.jl`](https://github.com/JuliaPlots/Makie.jl).
 
-Stay tuned for more developments :)
+My mentor is [Simon Danisch](https://github.com/SimonDanisch/). I'm excited to be working together with an expert! :)
+
+Stay tuned for more developments!
 
 ---
 
