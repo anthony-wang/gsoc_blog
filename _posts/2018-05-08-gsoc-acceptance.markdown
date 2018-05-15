@@ -15,6 +15,8 @@ My mentor is [Simon Danisch](https://github.com/SimonDanisch/). I'm excited to b
 
 Stay tuned for more developments!
 
+<br>
+
 ---
 
 <br>
