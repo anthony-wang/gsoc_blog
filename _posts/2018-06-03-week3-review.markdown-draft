@@ -34,6 +34,7 @@ The following is a short progress report of the past two weeks' work.
 * automatically generate an Docs page (examples gallery) of all examples sorted and cross-referenced by `tag`, including example code and generated plots (plots currently not working—see TODOs section).
 	* implement an internal `_print_source` function that prints the source code of the plot example, including specifying the code flavor in a fenced block (e.g. "\`\`\`julia")
 * pushed four commits related to the above, [](), [](), [](), [](), [](), []().
+* one merged pull request for refactoring [\(PR #89\)](https://github.com/JuliaPlots/Makie.jl/pull/89)
 * met with mentor five times in total (including today).
 
 
@@ -48,7 +49,7 @@ The following is a short progress report of the past two weeks' work.
 	* using `Documenter.jl`'s `Selectors.Matcher` and `Selectors.Runner` to match and select specific plot examples from the examples database (for example by matching the specific example's title).
 
 #### Difficulties encountered
-* bullet
+* the backend for the plotting hasn't been fully implemented yet, as a result I cannot do the plot export + embed in the documentation pages yet. But hopefully this will be available soon!
 
 So, that's it for today's post! Onwards to the next week!
 
