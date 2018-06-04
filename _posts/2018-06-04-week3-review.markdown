@@ -44,7 +44,7 @@ Some of next week's TODOs are:
 * misunderstandings due to incorrect assumptions during debugging -- this has taught me to not rely on my own assumptions, and to improve my debugging skills!
 * the backend for the plotting hasn't been fully implemented yet, as a result I cannot do the plot export + embed in the documentation pages yet. But hopefully this will be available soon!
 
-I would like to express my gratitude to Simon Danisch for guiding me through he past two weeks, and for helping me debug my code \^\^
+I would like to express my gratitude to Simon Danisch for guiding me through he past two weeks, and for helping me debug my code ^^
 
 So, that's it for today's post! Onwards to the next weeks!
 
