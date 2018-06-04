@@ -24,11 +24,6 @@ The following is a short progress report of the past two weeks' work.
 * implement `find_indices` and `example_database` functions which accept `input_tags` as the input and has optional keyword arguments `author` and `title` to further filter the results.
 	* `find_indices` searches the example database for examples matching the input tags, and returns the indices. 
 	* `example_database` returns the entries associated with the input tags and prints the source to the REPL by overloading `Base.show` on the `CellEntry` type.
-
-		```julia
-		#code snippet in nested bullet
-		```
-
 * rewrite docstrings for plotting atomics functions
 * automatically generate an overview Docs page of all plotting atomics functions in `Makie.jl` including their function signatures and attributes
 * automatically generate an Docs page (examples gallery) of all examples sorted and cross-referenced by `tag`, including example code and generated plots (plots currently not working—see TODOs section).
