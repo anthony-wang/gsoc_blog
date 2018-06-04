@@ -40,10 +40,6 @@ The following is a short progress report of the past two weeks' work.
 
 #### TODOs
 Some of next week's TODOs are:
-
-	```julia
-	#more code
-	```
 * go through the plot examples in the examples database and test them; fix the non-functioning ones
 * automatically generate a detailed Docs page of all plotting atomics functions, including plot examples and the source code for the plots
 	* the source code embedding is working, but plotting is not working yet due to non-functioning backend. This should hopefully be resolved soon.
