@@ -7,9 +7,9 @@ categories: jekyll update Julia Makie GSoC progress report
 
 Week 3 of GSoC is **done**! 😎🤠
 
-The last two weeks were packed with lots of learning, programming, and of course debugging (including what is possibly the most embarassing programming mistake of my life :sweat_smile:[^footnote1]).
+The last two weeks were packed with lots of learning, programming, and of course debugging (including what is possibly the most embarassing programming mistake of my life 😅[^footnote1]).
 
-I am also happy to announce that I will be attending [JuliaCon 2018](http://juliacon.org/2018/)! This will take place during Aug. 7–11, 2018 at University College London. For a student like me, this shall be a great opportunity for learning from the best minds, seeing what else is possible with Julia, and networking. Also, it would be great to visit London :wink:.
+I am also happy to announce that I will be attending [JuliaCon 2018](http://juliacon.org/2018/)! This will take place during Aug. 7–11, 2018 at University College London. For a student like me, this shall be a great opportunity for learning from the best minds, seeing what else is possible with Julia, and networking. Also, it would be great to visit London 😉.
 
 The following is a short progress report of the past two weeks' work.
 
@@ -51,7 +51,7 @@ So, that's it for today's post! Onwards to the next weeks!
 
 <br>
 
-[^footnote1]: This will never see the light of day.
+[^footnote1]: This will never see the light of day. And I will probably never hear the end of this from Simon😆.
 
 ---
 
