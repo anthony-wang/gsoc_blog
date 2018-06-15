@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Week 6 of GSoC"
+date:   2018-06-15 15:00 +0200
+categories: GSoC Julia Makie progress report evaluation
+---
+
+Week 6 of GSoC is **done**! 😎🤠 <sub><sup>And I guess I survived Evaluation 1 and am still here... 😅</sup></sub>
+
+The following is a short progress report of the past week's work.
+
+#### Finished -- `Makie.jl` and `AbstractPlotting.jl`
+* one commit merged to `master` branch at `AbstractPlotting.jl` ([a6e3c72](https://github.com/JuliaPlots/AbstractPlotting.jl/commit/a6e3c725758b1fbd1343198e93971944892bcfec))
+
+
+#### TODOs
+* 
+
+
+#### Difficulties encountered
+* 
+
+
+So, that's it! Hope you enjoyed reading this. Onwards to the next weeks! 
+
+
+<br>
+
+
+---
+
+<br>
+
+![GSoC logo]({{ site.url }}/gsoc_blog/assets/img/GSoC-logo-horizontal-800.png)
+<sub>Image source: [Google Summer of Code](https://developers.google.com/open-source/gsoc/resources/marketing#logos_and_artwork), CC BY-NC-ND 3.0</sub>
