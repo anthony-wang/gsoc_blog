@@ -19,7 +19,7 @@ The following is a short progress report of the past two week's work.
 * manually tested the plot examples from the [examples library](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/examples/library.jl), fixed some examples, and documented & temporarily disabled the non-working ones (big thanks to Simon for his assistance on this)
 * added auto-parsing and generation of documentation pages for atomic plotting functions
 * overloading `Base.show` for displaying examples database entries of the type `CellEntry`
-* added `_print_source` function and the ability to print different flavours of code blocks (e.g. \`\`\``julia`) using keyword arguments `julia`, `example`, `eval`. 
+* added `_print_source` function and the ability to print different flavours of code blocks (e.g. `\`\`\`julia`) using keyword arguments `julia`, `example`, `eval`. 
 	* when printing in `example` flavour, automatically number the examples. This also respects when examples are grouped (e.g. in example plots with multiple steps, this should show plotting examples after each step)
 * auto-generation and saving of static plots and animated plots (as video)
 * added the auto-generation of thumbnails from static plots and animated plots, in doing this, found the bug in `ImageMagick.jl` as shown above
@@ -32,11 +32,8 @@ The following is a short progress report of the past two week's work.
 ![My first plot!!]({{ site.url }}/gsoc_blog/assets/img/Anthonys-first-plot.png)
 
 #### Demo -- Example plots gallery of `Makie.jl`
-![Example plots gallery demo]({{ site.url }}/gsoc_blog/assets/vid/2018-06-15-example-gallery-demo.mp4)
-![Example plots gallery demo]({{ site.url }}/gsoc_blog/assets/vid/2018-06-15-example-gallery-demo.webm)
-
 <video  width="800" autoplay loop>
-	<source src="https://anthony-wang.github.io/gsoc_blog/assets/2018-06-15-example-gallery-demo.webm"> Your browser does not support the video tag.
+	<source src="https://anthony-wang.github.io/gsoc_blog/assets/vid/2018-06-15-example-gallery-demo.webm"> Your browser does not support the video tag.
 </video>
 
 
