@@ -5,9 +5,14 @@ date:   2018-06-15 15:00 +0200
 categories: GSoC Julia Makie progress report evaluation
 ---
 
-Week 6 of GSoC is **done**! 😎🤠 <sub><sup>And I guess I survived Evaluation 1 and am still here... 😅</sup></sub>
+Week 6 of GSoC is **done**! 🤓💻 <sub><sup>And I guess I survived Evaluation 1 and am still here... ✌️😅</sup></sub>
 
 The following is a short progress report of the past week's work.
+
+#### Milestones
+* [`Makie` legacy release!](https://github.com/JuliaPlots/Makie.jl/releases/tag/v0.0.1)
+* [`AbstractPlotting` prelease!](https://github.com/JuliaPlots/AbstractPlotting.jl/releases/tag/v0.0.1)
+
 
 #### Finished -- `Makie.jl` and `AbstractPlotting.jl`
 * one commit merged to `master` branch at `AbstractPlotting.jl` ([a6e3c72](https://github.com/JuliaPlots/AbstractPlotting.jl/commit/a6e3c725758b1fbd1343198e93971944892bcfec))
@@ -18,10 +23,13 @@ The following is a short progress report of the past week's work.
 
 
 #### Difficulties encountered
-* 
+* due to issues in `Documenter.jl`, the thumbnails in `Makie`'s documentation cannot be as nicely cross-referenced as I'd like. I am thinking of alternative ways to manually cross-reference the thumbnails, but have no elegant solutions so far. I have discussed this with [@mortenpi](https://github.com/mortenpi) on Slack, and filed three issues regarding this:
+	* [`Makie.jl` issue #95](https://github.com/JuliaPlots/Makie.jl/issues/95)
+	* [`Documenter.jl` issue #744](https://github.com/JuliaDocs/Documenter.jl/issues/744)
+	* [`Documenter.jl` issue #745](https://github.com/JuliaDocs/Documenter.jl/issues/745)
 
 
-So, that's it! Hope you enjoyed reading this. Onwards to the next weeks! 
+So, that's it! Hope you enjoyed reading this. Onwards to the next weeks 👨‍💻! 
 
 
 <br>
