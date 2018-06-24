@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 6 of GSoC"
-date:   2018-06-15 15:00 +0200
+date:   2018-06-24 15:00 +0200
 categories: GSoC Julia Makie progress report evaluation
 ---
 
@@ -10,16 +10,18 @@ Week 6 of GSoC is **done**! 🤓💻 <sub><sup>And I guess I survived Evaluation
 The following is a short progress report of the past week's work.
 
 #### Milestones
+* [`Makie` documentation released online!](https://makie.juliaplots.org/latest/)
 * [`Makie` legacy release!](https://github.com/JuliaPlots/Makie.jl/releases/tag/v0.0.1)
 * [`AbstractPlotting` prelease!](https://github.com/JuliaPlots/AbstractPlotting.jl/releases/tag/v0.0.1)
 
 
 #### Finished -- `Makie.jl` and `AbstractPlotting.jl`
 * one commit merged to `master` branch at `AbstractPlotting.jl` ([a6e3c72](https://github.com/JuliaPlots/AbstractPlotting.jl/commit/a6e3c725758b1fbd1343198e93971944892bcfec))
+* improved thumbnail generation vastly (reducing aliasing artifacts) by first Gaussian filtering the image ([7290e18](https://github.com/JuliaPlots/Makie.jl/pull/98/commits/7290e189c80971fa44c2189191a848200c55d651))
 
 
 #### TODOs
-* 
+* two major pull request in progress for merging to `master`! ([#98](https://github.com/JuliaPlots/Makie.jl/pull/98) and [#93](https://github.com/JuliaPlots/Makie.jl/pull/93))
 
 
 #### Difficulties encountered
