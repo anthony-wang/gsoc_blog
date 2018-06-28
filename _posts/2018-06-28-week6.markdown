@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 6+½ (`13//2`) of GSoC"
 date:   2018-06-28 08:20 +0200
-categories: GSoC Julia Makie progress report evaluation
+categories: GSoC Julia Makie progress report
 ---
 
 Week 6 + part of Week 7 of GSoC is **done**! 🤓💻 <sub><sup>And I guess I survived Evaluation 1 and am still here... ✌️😅</sup></sub>
