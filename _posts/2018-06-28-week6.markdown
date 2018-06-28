@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Week 6+½ (`13//2`) of GSoC"
+title:  "Week 6+½ (13//2) of GSoC"
 date:   2018-06-28 08:20 +0200
 categories: GSoC Julia Makie progress report
 ---
 
 Week 6 + part of Week 7 of GSoC is **done**! 🤓💻 <sub><sup>And I guess I survived Evaluation 1 and am still here... ✌️😅</sup></sub>
 
-The following is a short progress report since the last one.
+The following is a short progress report since the last post.
 
 #### Milestones
-* two major PRs to branch `master` containing many documentation changes is merged! They are: [#98](https://github.com/JuliaPlots/Makie.jl/pull/98) and [#93](https://github.com/JuliaPlots/Makie.jl/pull/93).
-* `Makie` documentation is [available online!](https://makie.juliaplots.org/latest/) (note that since the documentation generation with the CI is not implemented yet, this documentation lag behind the latest commit(s). If you want the latest and greatest, you can run `julia make.jl` to build the latest docs.)
+* two major PRs to branch `master` containing many documentation changes are merged🎉🎉!! They are: [#98](https://github.com/JuliaPlots/Makie.jl/pull/98) and [#93](https://github.com/JuliaPlots/Makie.jl/pull/93).
+* `Makie` documentation is [available online!](https://makie.juliaplots.org/latest/) (note that since the documentation generation with the CI is not implemented yet, this documentation lag behind the latest commit(s). If you want the latest and greatest, you can run `julia make.jl` to build the latest docs. But this should hopefully be up and running in a few days!)
 * CI for `Makie` is up and running, currently it runs through visual regression tests and will soon build the documentation automatically with each change! (The visual regression part + CI config is being worked on by Simon).
 * [`Makie` legacy release!](https://github.com/JuliaPlots/Makie.jl/releases/tag/v0.0.1)
 * [`AbstractPlotting` prelease!](https://github.com/JuliaPlots/AbstractPlotting.jl/releases/tag/v0.0.1)
@@ -19,10 +19,23 @@ The following is a short progress report since the last one.
 
 #### Finished -- `Makie.jl` and `AbstractPlotting.jl`
 * one commit merged to `master` branch at `AbstractPlotting.jl` ([a6e3c72](https://github.com/JuliaPlots/AbstractPlotting.jl/commit/a6e3c725758b1fbd1343198e93971944892bcfec))
-* improved thumbnail generation vastly (reducing aliasing artifacts) by first Gaussian filtering the image ([7290e18](https://github.com/JuliaPlots/Makie.jl/pull/98/commits/7290e189c80971fa44c2189191a848200c55d651))
+* improved thumbnail generation vastly (reducing aliasing artifacts) by first Gaussian filtering the image (see image below). For videos, find the video duration, seek to the middle of the video and grab a thumbnail from there. ([7290e18](https://github.com/JuliaPlots/Makie.jl/pull/98/commits/7290e189c80971fa44c2189191a848200c55d651))
+* various other backend documentation generation improvements and changes
+* various other documentation additions and changes
 
 Here's an illustration that shows the effect of image filtering on the visual quality of the thumbnail:
 ![Comparison of thumbnail quality after pre-filtering with different Gaussian factors prior to rescaling]({{site.url}}/gsoc_blog/assets/img/ImageFiltering-gaussian-comparison.png)
+
+I chose to use the factor `0.4` because it looked the best to my eyes.
+
+Code snippet used to apply Gaussian filter and rescale image:
+```julia
+gaussfactor = 0.4
+σ = map((o,n) -> gaussfactor*o/n, size(img), newsz)
+kern = KernelFactors.gaussian(σ)   # from ImageFiltering
+imgf = ImageFiltering.imfilter(img, kern, NA())
+newimg = ImageTransformations.imresize(imgf, newsz)
+```
 
 
 #### TODOs
