@@ -16,7 +16,7 @@ The following is a progress report since the last post.
 	* as an example you can now write `@example_database("Contour3d")` in the `documentation.md` source Markdown file, and during compile, the source code + the plot of the example will be automatically inserted
 	* likewise, `@example_database("Contour3d", code)` inserts only the source code, and
 	* `@example_database("Contour3d", plot)` inserts only the plot <sup><sup>(oh, the magic of regex 😍)</sup></sup>
-* implementation of a `Stepper` class that allows one to `step` through example plots, and save a plot at each `step`
+* implementation of a `Stepper` class that allows one to `step!` through example plots, and save a plot at each `step`
 ```julia
 	mutable struct Stepper
 		  scene::Scene
@@ -37,11 +37,14 @@ The following is a progress report since the last post.
 * the `stepper` examples are automatically generated when compiling the documentation, and inserted on the fly
 	* as above, we can also write `@example_database("Theming", stepperplot)` in the `documentation.md` to insert stepper plots automatically
 * for some more stepper examples, consult the `Makie` documentation, which is [available online!](https://makie.juliaplots.org/v1.0.0/)
+
+#### Mergers (& Acquisitions)
 * two PRs to branch `master` on `AbstractPlotting` merged🎉! [#2](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/2), [#4](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/4).
 * three major PRs to branch `master` on `Makie` containing many documentation changes are merged🎉!! They are: [#99](https://github.com/JuliaPlots/Makie.jl/pull/99), [#111](https://github.com/JuliaPlots/Makie.jl/pull/111), and [#114](https://github.com/JuliaPlots/Makie.jl/pull/114).
 * AND... the Gitlab CI pipeline for visual regression tests actually passed, **for once**!
 
 ![The chances of this happening are like 1 in 1E200]({{site.url}}/gsoc_blog/assets/img/gitlab-pipeline-pass.png)
+
 <sub><sup>The "failed" status with the documentation postprocessing step is due to a missing package on the CI, and should be fixed soon.</sup></sub>
 
 * I also implemented some subscenes examples, e.g.:
@@ -59,6 +62,7 @@ The following is a progress report since the last post.
 And lastly... a spacecraft from a galaxy far, far away
 
 ![spacecraft from a galaxy far, far away]({{site.url}}/gsoc_blog/assets/img/spacecraft.jpg)
+
 <sub><sup>source for implicit equations: http://www.leweyg.com/download/impview.html</sup></sub>
 
 These examples are saved in the [`implicits.jl` library](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/examples/implicits.jl), so feel free to check them out! 😀☝
