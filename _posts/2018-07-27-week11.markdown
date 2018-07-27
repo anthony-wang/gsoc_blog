@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 11 of GSoC"
-date:   2018-07-27 18:20 +0200
+date:   2018-07-27 14:20 +0200
 categories: GSoC Julia Makie progress report
 ---
 
@@ -12,7 +12,7 @@ The following is a progress report since the last post.
 
 #### Milestones -- `Makie.jl` and `AbstractPlotting.jl`
 * continually updated [`Makie`](https://github.com/JuliaPlots/Makie.jl/) and [`AbstractPlotting`](https://github.com/JuliaPlots/AbstractPlotting.jl) packages, bringing updates and improvements to documentation and additional tutorials.
-* extension of the `Documenter.Selectors.matcher` and `Documenter.Selectors.runner` to match custom-defined keywords using regex, and [perform actions based on the matches](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/docs/documenter_extension.jl)
+* extension of the `Documenter.Selectors.matcher` and `Documenter.Selectors.runner` to match custom-defined keywords using regex, and [perform actions based on the match captures](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/docs/documenter_extension.jl)
 	* as an example you can now write `@example_database("Contour3d")` in the `documentation.md` source Markdown file, and during compile, the source code + the plot of the example will be automatically inserted
 	* likewise, `@example_database("Contour3d", code)` inserts only the source code, and
 	* `@example_database("Contour3d", plot)` inserts only the plot <sup><sup>(oh, the magic of regex 😍)</sup></sup>
@@ -37,8 +37,8 @@ The following is a progress report since the last post.
 * the `stepper` examples are automatically generated when compiling the documentation, and inserted on the fly
 	* as above, we can also write `@example_database("Theming", stepperplot)` in the `documentation.md` to insert stepper plots automatically
 * for some more stepper examples, consult the `Makie` documentation, which is [available online!](https://makie.juliaplots.org/v1.0.0/)
-* one PR to branch `master` on `AbstractPlotting` merged🎉! [#2](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/2)
-* major PRs to branch `master` on `Makie` containing many documentation changes are merged🎉!! They are: [#99](https://github.com/JuliaPlots/Makie.jl/pull/99), [#111](https://github.com/JuliaPlots/Makie.jl/pull/111), and [#114](https://github.com/JuliaPlots/Makie.jl/pull/114).
+* two PRs to branch `master` on `AbstractPlotting` merged🎉! [#2](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/2), [#4](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/4).
+* three major PRs to branch `master` on `Makie` containing many documentation changes are merged🎉!! They are: [#99](https://github.com/JuliaPlots/Makie.jl/pull/99), [#111](https://github.com/JuliaPlots/Makie.jl/pull/111), and [#114](https://github.com/JuliaPlots/Makie.jl/pull/114).
 * AND... the Gitlab CI pipeline for visual regression tests actually passed, **for once**!
 
 ![The chances of this happening are like 1 in 1E200]({{site.url}}/gsoc_blog/assets/img/gitlab-pipeline-pass.png)
