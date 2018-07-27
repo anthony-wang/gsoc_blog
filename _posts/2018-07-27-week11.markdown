@@ -36,7 +36,7 @@ The following is a progress report since the last post.
 
 * the `stepper` examples are automatically generated when compiling the documentation, and inserted on the fly
 	* as above, we can also write `@example_database("Theming", stepperplot)` in the `documentation.md` to insert stepper plots automatically
-* for some more stepper examples, consult the `Makie` documentation, which is [available online!](https://makie.juliaplots.org/v1.0.0/)
+* for some more stepper examples, consult the `Makie` documentation, which is [available online!](https://makie.juliaplots.org/stable/)
 
 #### Mergers (& Acquisitions)
 * two PRs to branch `master` on `AbstractPlotting` merged🎉! [#2](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/2), [#4](https://github.com/JuliaPlots/AbstractPlotting.jl/pull/4).
