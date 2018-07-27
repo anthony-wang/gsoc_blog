@@ -49,7 +49,9 @@ The following is a progress report since the last post.
 
 * I also implemented some subscenes examples, e.g.:
 
-![Subscenes example]({{site.url}}/gsoc_blog/assets/img/subscenes-contour.jpg)
+![Subscenes contour]({{site.url}}/gsoc_blog/assets/img/subscenes-contour.jpg)
+
+![Subscenes surface + wireframe + contour]({{site.url}}/gsoc_blog/assets/img/surface_wireframe_contour.jpg)
 
 
 #### One more thing...
