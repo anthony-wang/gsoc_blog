@@ -49,10 +49,15 @@ The following is a progress report since the last post.
 
 * I also implemented some subscenes examples, e.g.:
 
+`surface` + `contour3d` plot
+
 ![Subscenes contour]({{site.url}}/gsoc_blog/assets/img/subscenes-contour.jpg)
+
+`surface` + `wireframe` + `contour` plot
 
 ![Subscenes surface + wireframe + contour]({{site.url}}/gsoc_blog/assets/img/surface_wireframe_contour.jpg)
 
+Check these examples out in the [`examples3d.jl` library](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/examples/examples3d.jl)!
 
 #### One more thing...
 * I started exploring some implicit plots, and plots involving inequalities, these generate some pretty interesting-looking plots:
@@ -65,7 +70,7 @@ And lastly... a spacecraft from a galaxy far, far away
 
 ![spacecraft from a galaxy far, far away]({{site.url}}/gsoc_blog/assets/img/spacecraft.jpg)
 
-<sub><sup>source for implicit equations: http://www.leweyg.com/download/impview.html</sup></sub>
+<sub><sup>source for implicit equations: [http://www.leweyg.com/download/impview.html](http://www.leweyg.com/download/impview.html)</sup></sub>
 
 These examples are saved in the [`implicits.jl` library](https://github.com/JuliaPlots/Makie.jl/blob/aw/documentation/examples/implicits.jl), so feel free to check them out! 😀☝
 
