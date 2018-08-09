@@ -30,7 +30,7 @@ The following is a progress report since the last post.
 	    return s
 	end
 ```
-* these `stepper` examples are geat for showing off progressive changes in plots, such as demonstrating the effects of theming or changing data:
+* these `stepper` examples are great for showing off progressive changes in plots, such as demonstrating the effects of theming or changing data:
 
 ![stepper example for axis theming]({{site.url}}/gsoc_blog/assets/img/stepper-example.png)
 
