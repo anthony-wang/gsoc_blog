@@ -22,7 +22,7 @@ The main working goals of my project are:
 
 The following is a summary of what was achieved for `Makie.jl`. Note that `Makie.jl` implements a higher-level layer to the [`AbstractPlotting.jl`](https://github.com/JuliaPlots/AbstractPlotting.jl) package (also by Simon), which provides the atomic plotting functions that enable plotting.
 
-#### Extending the documentation capabilities
+## Extending the documentation capabilities
 Various help functions were implemented: `help`, `help_arguments` and `help_attributes`.
 These can be used as such:
 
@@ -66,7 +66,7 @@ example_database(AbstractPlotting.scatter)
 
 There were backend changes that were necessary to implement these help functions, such as the collection, iteration and pretty-printing of the plots attributes dictionaries, and the type conversions necessary to handle function handle or Plot type inputs, etc.
 
-#### Implement database reference queries in the documentation pages
+## Implement database reference queries in the documentation pages
 A custom extension in `Documenter`'s `Selectors.matcher` and `Selectors.runner` was implemented to use regex-matching on strings of the form
 
 `@example_database("scatter example", plot)`.
@@ -78,7 +78,7 @@ For animated plots, the embed code is able to embed the animations (either as `.
 Furthermore, one can write `@example_database("plot example", code)` to embed just the source code of the example (more on this later). Likewise, `@example_database("plot example", stepperplot)` embeds plots from `Stepper` examples, and `@example_database("plot example")` embeds both the plot, plus the source code.
 
 
-#### Improve current documentation
+## Improve current documentation
 Various quick-start guides and tutorials were added to the documentation (now visible online at https://makie.juliaplots.org/stable/) to help first-time users get started quickly with Makie.
 
 A landing page was added as well, which serves as the [index page](https://makie.juliaplots.org/stable/index.html) of the online docs. This is intended to offer a brief showcase for some of the plots that can be made using Makie.
@@ -86,7 +86,7 @@ A landing page was added as well, which serves as the [index page](https://makie
 In addition, detailed documentation pages about the help functions, atomics plotting functions, plot signatures and attributes, axis theming, interaction (including animation of plots), and output (saving) of plots were added.
 
 
-#### Implement additional plot examples
+## Implement additional plot examples
 Many plots were implemented throughout the entire GSoC coding period, utilizing the various atomics plotting functions.
 
 Some of the plots were created as part of the tutorials (e.g. to show how to theme a plot, or animate a plot), or as example pieces for the documentation pages (e.g. to show how to output an animated plot to a file).
@@ -137,14 +137,14 @@ For each `step!(st)`, a new plot snapshot is saved.
 ![stepper example]({{site.url}}/gsoc_blog/assets/img/stepper-example2.jpg)
 
 
-#### Implement overview page for plotting functions with example plots
+## Implement overview page for plotting functions with example plots
 This was achieved by iterating through the plotting functions and generating the documentation using the help functions implemented earlier.
 The overview page shows the docstring of each of the plotting functions and the available plot attributes for the plot (plus default values).
 
 ![function overview for surface plots]({{site.url}}/gsoc_blog/assets/img/function-overview-surface.png)
 
 
-#### Implement preview gallery / categorical pages of plot types (e.g. all scatter plots)
+## Implement preview gallery / categorical pages of plot types (e.g. all scatter plots)
 This was achieved by iterating through the plotting functions and creating a separate page for each of the plotting functions.
 Then, all plots examples (including animated plots) of a given plotting function are inserted along with the source code to generate the plots.
 
@@ -153,7 +153,7 @@ An index page listing all of the examples pages and title of each example is als
 ![example gallery for contour]({{site.url}}/gsoc_blog/assets/img/contour-example-gallery.png)
 
 
-#### Substantially-automated documentation generation
+## Substantially-automated documentation generation
 A large part of the documentation generation is now automated.
 The aim here is to reduce the amount of writing and manually updating of the documentation pages, whenever a code or recipe change is made. Thus, efforts are also made so that the docs generation mechanism is robust.
 This is done by creating a base page for documentation pages, e.g. "`src-axis.md`" for mostly static text, and then adding dynamically-generated content to that to further generate an "`axis.md`" page which will eventually be compiled using `Documenter`.
@@ -164,7 +164,7 @@ All example plots from the examples database are generated in one go initially (
 
 
 
-#### Originally-submitted proposal
+## Originally-submitted proposal
 My proposal for `Makie` can be found on [Google Docs](https://docs.google.com/document/d/1JLog0PG7NPysdSjQNZRpaJUcJ2nb4jW9uvWqV0aRE6I/edit?usp=sharing).
 
 <br>
