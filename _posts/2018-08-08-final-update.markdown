@@ -136,6 +136,13 @@ For each `step!(st)`, a new plot snapshot is saved.
 
 ![stepper example]({{site.url}}/gsoc_blog/assets/img/stepper-example2.jpg)
 
+<div style="display:inline-block">
+   <p style="display:inline-block; text-align: center">
+   Some text </br>
+      <img src="https://github.com/anthony-wang/gsoc_blog/raw/master/assets/img/stepper-example2.jpg" alt="3D contour + 2D contour" style="width:400px" />
+   </p>
+</div>
+
 #### Implement overview page for plotting functions with example plots
 This was achieved by iterating through the plotting functions and generating the documentation using the help functions implemented earlier.
 The overview page shows the docstring of each of the plotting functions and the available plot attributes for the plot (plus default values).
