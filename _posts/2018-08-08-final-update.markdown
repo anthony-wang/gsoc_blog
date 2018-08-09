@@ -5,6 +5,8 @@ date:   2018-08-08 14:20 +0100
 categories: GSoC Julia Makie final progress report
 ---
 
+<sup>First, a brief aside: if you were directed here from the GSoC project list, you might want to check out the [rest of my blog](https://anthony-wang.github.io/gsoc_blog/) for some more background info first!</sup>
+
 So, GSoC 2018 is [coming to an end](https://summerofcode.withgoogle.com/how-it-works/#timeline)...
 
 I had an amazing time this summer with GSoC, full of challenges and surprises, and I am grateful for everyone's support and encouragement.
